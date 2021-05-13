@@ -1,6 +1,6 @@
 # KM-BART: Knowledge Enhanced Multimodal BART for Visual Commonsense Generation (ACL 2021) 
 
-**Yiran Xing***, **Zai Shi***, **Zhao Meng***, **Gerhard Lakemeyer**, **Yunpu Ma**， **Roger Wattenhofer**   
+### **Yiran Xing***, **Zai Shi***, **Zhao Meng***, **Gerhard Lakemeyer**, **Yunpu Ma**, **Roger Wattenhofer**   
 
 ∗The first three authors contribute equally to this work
 
