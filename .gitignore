@@ -1,0 +1,16 @@
+__pycache__
+.idea
+.vscode
+.ipynb_checkpoints
+
+/data
+/log
+/checkpoint
+/output
+/slurm
+
+tmp*
+*.tsv
+bua-caffe-frcn-r101_with_attributes.pth
+
+

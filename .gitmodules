@@ -1,0 +1,9 @@
+[submodule "comet-commonsense"]
+	path = comet-commonsense
+	url = https://github.com/atcbosselut/comet-commonsense.git
+[submodule "bottom-up-attention.pytorch"]
+	path = bottom-up-attention.pytorch
+	url = https://github.com/MILVLG/bottom-up-attention.pytorch.git
+[submodule "pycocoevalcap"]
+	path = pycocoevalcap
+	url = https://github.com/salaniz/pycocoevalcap.git
