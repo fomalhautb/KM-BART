@@ -4,11 +4,29 @@
 
 ∗The first three authors contribute equally to this work
 
-[[Paper]](https://arxiv.org/pdf/2101.00419.pdf)
+[[Paper]](https://aclanthology.org/2021.acl-long.44.pdf) [[Supplementary]](https://aclanthology.org/attachments/2021.acl-long.44.OptionalSupplementaryMaterial.pdf)
 
 ![image](https://user-images.githubusercontent.com/14837467/118099580-b9b53a80-b3d5-11eb-9e86-188a99fd71d5.png)
 
 ![image](https://user-images.githubusercontent.com/14837467/118100120-62fc3080-b3d6-11eb-9196-a221024fc970.png)
+
+## How to Cite Our Work
+
+```
+@inproceedings{KM-BART,
+    title = "{KM}-{BART}: Knowledge Enhanced Multimodal {BART} for Visual Commonsense Generation",
+    author = "Xing, Yiran  and
+      Shi, Zai  and
+      Meng, Zhao  and
+      Lakemeyer, Gerhard  and
+      Ma, Yunpu  and
+      Wattenhofer, Roger",
+    booktitle = "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)",
+    year = "2021",
+    publisher = "Association for Computational Linguistics",
+    pages = "525--535"
+}
+```
 
 ## Installation
 
