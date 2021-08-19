@@ -108,7 +108,7 @@ The following steps are only required for feature extraction.
         --data_dir $SBU_DATA \
         --output_dir $OUTPUT_DATA \
         --annot_dir $SBU_ANNOTATION \
-        --num_gpus 4 \
+        --gpu_num 4 \
         --n_jobs 8
     ```
 
@@ -116,7 +116,7 @@ The following steps are only required for feature extraction.
 1. Download the objects, relationships, region descriptions, attributs and image meta data from [here](https://visualgenome.org/api/v0/api_home.html) and decompress them into `$VG_ANNOTATION`
 2. Download the images from the same link above and decompress them into `$VG_IMAGES`
     ```bash
-    python -m scripts.prepare_vcg \
+    python -m scripts.prepare_vg \
         --annot_dir $VG_ANNOTATION \
         --output_dir $VG_DATA \
         --data_dir $VG_IMAGES \
