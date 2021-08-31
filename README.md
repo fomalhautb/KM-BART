@@ -123,26 +123,30 @@ The following steps are only required for feature extraction.
         --gpu_num 4 \
     ```
 
-### Reasoning (SBU and CC)
+### Reasoning (SBU and COCO)
 1. Download the pretrained weight `atomic_pretrained_model.pickle` of COMET from [comet-commonsense](https://github.com/atcbosselut/comet-commonsense/tree/0042875b79af18a5b30c502613bd4a832cb47627)
     - Save it to `$LOAD_PATH`.
+    - Follow the instructions in [comet-commonsense](https://github.com/atcbosselut/comet-commonsense/tree/0042875b79af18a5b30c502613bd4a832cb47627) to make the dataloader of COMET.
 2. Download the json files for image urls and captions from [here](http://www.cs.virginia.edu/~vicente/sbucaptions/) and decompress the two files into `$SBU_ANNOTATION`.
 3. Download the SBU dataset and save the images in `$SBU_DATA` and decompress the features, bounding box and labels of images and save into `$SBU_DATA`.
 4. Generate inferences and save the inferences in `$REASON_DATA`.
    ```bash
-   python -m scripts.prepare_coco_reason \
+   python -m scripts.prepare_sbu_reason \
         --output_dir $REASON_DATA \
         --annot_dir  $SBU_ANNOTATION \
         --model_file $LOAD_PATH/COMET \
         --gpu_num 2 \
         --sampling_algorithm topk-3
+   
+   # rename the output file
+   mv $REASON_DATA/train.json $SBU_DATA/reason_train.json
    ```
 4. Filter the newly generated inferences with a KM-BART pretrained on VCG (also in `$LOAD_PATH`) and save the final results in `$OUTPUT_DATA`.
    ```bash
    python -m scripts.filter_reason  \
         --data_dir $SBU_DATA \
         --output_dir $OUTPUT_DATA \
-        --checkpoint $LODAD_PATH/KM-BART
+        --checkpoint $LOAD_PATH/KM-BART
    ```
    
   
